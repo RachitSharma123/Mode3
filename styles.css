@@ -347,13 +347,47 @@ textarea {
   gap: 0.55rem;
 }
 
-.partners span {
+.partner-card {
+  margin: 0;
   border: 1px dashed var(--border);
   border-radius: 0.65rem;
-  padding: 0.78rem;
-  text-align: center;
-  font-size: 0.85rem;
+  padding: 0.5rem;
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+}
+
+.partner-card img {
+  width: 100%;
+  border-radius: 0.45rem;
+  display: block;
+}
+
+.reviews {
+  margin-top: 1rem;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.reviews h3 {
+  margin: 0.4rem 0 0.1rem;
+}
+
+.review-card {
+  border: 1px solid var(--border);
+  border-radius: 0.7rem;
+  padding: 0.75rem;
+  background: color-mix(in srgb, var(--surface) 78%, transparent);
+}
+
+.review-card p {
+  margin: 0;
+  font-size: 0.92rem;
+}
+
+.review-card span {
+  margin-top: 0.4rem;
+  display: block;
   color: var(--muted);
+  font-size: 0.82rem;
 }
 
 .copyright {
