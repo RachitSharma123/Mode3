@@ -4,7 +4,10 @@ const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 const savedTheme = localStorage.getItem('mode3-theme');
-if (savedTheme === 'dark') {
+if (savedTheme === 'light') {
+  root.removeAttribute('data-theme');
+  toggle.textContent = '🌙';
+} else {
   root.setAttribute('data-theme', 'dark');
   toggle.textContent = '☀️';
 }
